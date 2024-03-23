@@ -21,17 +21,16 @@
 header {
   position: sticky;
   top: 0;
-}
-body {
-  height: 10000px;
+  z-index: 40;
 }
 
 .logo img {
   width: 180px;
 }
 .nav ul {
-  display: flex;
+  display: inline-flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   width: 300px;
 }
 
@@ -119,6 +118,7 @@ body {
 }
 
 .banner-image {
+  position: relative;
   background-image: url(../image/banner.png);
   background-size: cover;
 
@@ -126,7 +126,286 @@ body {
   height: 400px;
 }
 
-.banner-bc{
-  background-color: rgb(0, 5, 8);
+.banner-bc {
+  position: absolute;
+  background-color: rgba(199, 239, 239, 0.305);
   width: 100%;
+  height: 400px;
+  z-index: 10;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 300px;
+  color: var(--main-color);
+  font-family: "Madimi One", sans-serif;
+  font-size: 70px;
+  text-align: center;
+  z-index: 20;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  width: 200px;
+  height: 50px;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  margin-top: 60px;
+}
+
+.btn a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+/* <!-- Featured Products --> */
+
+.section-wrapper {
+  position: relative;
+  margin: 60px 130px;
+}
+.section-title {
+  font-family: "Madimi One", sans-serif;
+  font-size: 30px;
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+/* PRoduct card styles */
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 12px;
+}
+
+.product-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 15px;
+  width: 320px;
+  margin: 60px 0;
+}
+
+.product-card img {
+  width: 100%;
+
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.product-card h2 {
+  height: 40px;
+}
+
+.product-card button {
+  height: 40px;
+  width: 100%;
+  background-color: transparent;
+  border: var(--main-color) 1px solid;
+  cursor: pointer;
+  text-align: celenter;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 2px;
+  font-size: 15px;
+}
+
+.product-card a {
+  text-decoration: none;
+  color: inherit;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  text-align: left;
+}
+
+.product-image {
+  transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  border-radius: 10px;
+}
+.image-1:hover {
+  content: url(../image/Sexy-lip-bite-with-vampire-teeth_5.jpg);
+  transform: scale(1.1);
+}
+.image-2:hover {
+  content: url(../image/Strawberry-Adjustable-Ring-With-Tiger-Teeth_7.webp);
+  transform: scale(1.1);
+}
+
+.image-3:hover {
+  content: url(../image/Strawberry-Earrings-with-Flower-Studs_6.jpg);
+  transform: scale(1.1);
+}
+
+.image-4:hover {
+  content: url(../image/Lips-with-Snake-Tongue-Black-Choker_4.webp);
+  transform: scale(1.1);
+}
+
+.btn-black {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: #ffffff;
+  width: 200px;
+  height: 50px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn-black a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  color: white;
+}
+
+/* Collections Styles */
+
+.collection-card {
+  width: 250px;
+  margin-top: 60px;
+}
+.collection-card a {
+  text-decoration: none;
+  color: var(--main-color) !important;
+}
+
+.collection-card img {
+  width: 100%;
+}
+
+.collection-card h5 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  text-align: left;
+  line-height: 25px;
+
+  width: 200px;
+  margin: 20px;
+}
+
+.collection-card img:hover {
+  content: ();
+  transform: scale(1.1);
+}
+
+/* Footer styles */
+
+.email-form {
+  margin: 60px 130px;
+}
+
+.email-form h3 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  text-align: left;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+.email-form input[type="email"] {
+  position: relative;
+  height: 40px;
+  width: 400px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  font-size: 16px;
+  border-right: none;
+}
+
+.submit {
+  position: absolute;
+  height: 40px;
+  display: inline;
+  height: ;
+  border: 2px solid #ccc;
+  border-left: none;
+  background: none;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.pre-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  font-size: 30px;
+}
+
+.social a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.footer-dropdown {
+  margin: 60px 130px;
+}
+.drop-btn {
+  border: 2px solid black;
+  width: 200px;
+  margin-top: 20px;
+}
+
+.polices {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  width: 700px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  color: dimgrey;
+  margin: 100px 130px;
+}
+
+.polices a {
+  text-decoration: none;
+  color: dimgrey;
 }
