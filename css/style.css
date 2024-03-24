@@ -480,8 +480,9 @@ header {
 .about-us {
   color: var(--main-color);
   font-family: "Madimi One", sans-serif;
-  font-size: 70px;
-  margin: 40px 60px;
+  font-size: 30px;
+  text-decoration: underline;
+  margin: 40px 130px;
 }
 
 
@@ -586,6 +587,34 @@ header {
   text-align: left;
 }
 
+/* Contact Styles */
+
+.contact-text{
+ font-size: 20px;
+ margin-bottom: 40px;
+
+ 
+}
+
+.contact-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  
+
+}
+
+.contact-form{
+  display: flex ;
+  flex-direction: column;
+  gap: 5px;
+  width: 50%;
+}
+
+/* .contact-form input,
+.contact-form textarea  {padding: 20px;} */
 
 
 
