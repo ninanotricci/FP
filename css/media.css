@@ -1,5 +1,9 @@
-
-
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 
 /*  320px - 767px */
 @media (min-width: 320px) and (max-width: 767px) {
@@ -37,14 +41,20 @@
     margin: 20px 0;
   }
   .polices {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 200px;
     gap: 10px;
     margin: 20px 20px;
   }
   .pre-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 20px;
   }
@@ -72,10 +82,11 @@
   }
   .section-wrapper {
     margin: 40px 0;
-   
   }
-  .collection-wrapper{
-    justify-content:unset;
+  .collection-wrapper {
+    -webkit-box-pack: unset;
+    -ms-flex-pack: unset;
+    justify-content: unset;
   }
   .collection-card {
     gap: 10px;
@@ -83,7 +94,10 @@
     margin: 40px 0;
   }
 
-  .img-text  {
+  .img-text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
   .img-text img {
@@ -112,14 +126,20 @@
     width: 40%;
   }
   .polices {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 400px;
     gap: 15px;
     margin: 30px 40px;
   }
   .pre-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 20px;
   }
@@ -134,7 +154,10 @@
     width: 25%;
     margin: 40px 0;
   }
-  .img-text  {
+  .img-text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
   .img-text img {
@@ -163,7 +186,10 @@
     width: 24%;
     margin: 40px 0;
   }
-  .img-text  {
+  .img-text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
   .img-text img {
@@ -176,9 +202,7 @@
   .about-wrapper p {
     width: 100%;
   }
-  
 }
 
-@media (min-width: 1200px){
-
+@media (min-width: 1200px) {
 }
