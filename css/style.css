@@ -1,9 +1,4 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
+
 
 .example {
   display: -ms-grid;
@@ -15,14 +10,8 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(white),
-    to(black)
-  );
   background: -o-linear-gradient(top, white, black);
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
   background: linear-gradient(to bottom, white, black);
 }
 :root {
@@ -67,6 +56,7 @@
   width: 40px;
 }
 header {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 40;
@@ -367,9 +357,9 @@ header {
   transition: -webkit-transform 0.8s ease-in-out;
   -o-transition: transform 0.8s ease-in-out;
   transition: transform 0.8s ease-in-out;
-  transition: transform 0.8s ease-in-out,
-    -webkit-transform 0.8s ease-in-out;
-   
+  transition: transform 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out;
+
   border-radius: 10px;
 }
 .image-1:hover {
@@ -475,6 +465,8 @@ header {
 }
 
 .collection-card img {
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
   width: 100%;
 }
