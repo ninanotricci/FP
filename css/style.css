@@ -528,7 +528,6 @@ header {
   position: absolute;
   height: 40px;
   display: inline;
-  height: ;
   border: 2px solid #ccc;
   border-left: none;
   background: none;
@@ -604,8 +603,6 @@ header {
 
 /* About Us Styles */
 
-.about-sec {
-}
 .about-us {
   color: var(--main-color);
   font-family: "Madimi One", sans-serif;
