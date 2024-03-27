@@ -146,8 +146,10 @@
     width: 45%;
     margin: 20px 0;
   }
+}
 
-  768px - 991px @media (min-width: 768px) and (max-width: 991px) {
+  /* 768px - 991px */
+  @media (min-width: 768px) and (max-width: 991px) {
     .banner-text {
       font-size: 65px;
     }
@@ -236,4 +238,4 @@
 
   @media (min-width: 1200px) {
   }
-}
+
