@@ -718,7 +718,7 @@ header {
 /* Contact Styles */
 
 .contact-text {
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 40px;
 }
 
@@ -747,4 +747,14 @@ header {
   flex-direction: column;
   gap: 5px;
   width: 50%;
+}
+
+#etext{
+ resize: none;
+ height: 200px;
+}
+
+.error-text{
+  color: crimson;
+  
 }
