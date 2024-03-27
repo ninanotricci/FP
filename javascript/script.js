@@ -18,11 +18,11 @@ form.addEventListener("submit", function (event) {
 
   let userName = document.getElementById("fname").value;
   let userPhone = document.getElementById("phone").value;
-  let userEmail = document.getElementById("lname").value;
+  let userEmail = document.getElementById("email").value;
   let textArea = document.getElementById("etext").value;
 
   if (userEmail == "") {
-    errors.lname = "Email can not be empty";
+    errors.email = "Email can not be empty";
   }
   if (userName.length < 4) {
     errors.fname = "Username must be more than 4 characters";
