@@ -758,3 +758,10 @@ header {
   color: crimson;
   
 }
+
+.review-box{
+  /* background-color: chartreuse; */
+  height: 200px;
+  width: 200px;
+  padding: 20px;
+}
