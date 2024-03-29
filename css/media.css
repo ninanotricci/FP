@@ -146,6 +146,11 @@
     width: 45%;
     margin: 20px 0;
   }
+  .review-box {
+    width: 50%;
+    margin: 30px 60px;
+  }
+
 }
 
   /* 768px - 991px */
@@ -205,6 +210,10 @@
     .shop-product-card {
       width: 25%;
       margin: 20px 0;
+    }
+    .review-box {
+      width: 80%;
+      margin: 30px 60px;
     }
   }
 

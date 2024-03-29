@@ -503,7 +503,7 @@ header {
   font-size: 20px;
   text-align: left;
   line-height: 25px;
-  margin-bottom: 30px;
+  margin: 60px 0;
 }
 
 .email-form input[type="email"] {
@@ -759,9 +759,23 @@ header {
   
 }
 
-.review-box{
-  /* background-color: chartreuse; */
-  height: 200px;
-  width: 200px;
-  padding: 20px;
+.review-box {
+  
+  height: 100%;
+  max-width: 800px;
+  width: 100%;
+
+  margin: 30px 130px;
+}
+.review-box ul{
+  
+}
+
+.review-box h5{
+  color: var(--main-color);
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 30px;
+  margin-bottom: 20px;
 }

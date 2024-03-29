@@ -8,39 +8,39 @@ burger.addEventListener("click", function () {
   navigation.classList.toggle("activeNav");
 });
 
-
-
 // Fetch
 fetch("https://jsonplaceholder.typicode.com/posts/1/comments", {
     method: "GET",
-  })
-    .then(function (response) {
-      console.log(response);
-      if (!response.ok) {
+})
+.then(function(response) {
+    if (!response.ok) {
         throw response.status;
-      }
-      return response.json();
-    })
-    .then(function (reviewData) {
-      let div = document.createElement("div");
+    }
+    return response.json();
+})
+.then(function(reviewData) {
+    let ul = document.createElement("ul");
 
-      reviewData.data.forEach((element) => {
-        console.log(element);
-        let p = document.createElement("p");
-        p.textContent = `${element.name} ${element.body}`;
-        div.appendChild(p);
-      });
-      document.getElementById("reviews").appendChild(div);
-    })
-    .catch(function (error) {
-      console.log(error);
-      if (error === 404) {
-        let p = document.createElement("p");
-        p.textContent = "Page Not Found";
-        document.getElementById("reviews").appendChild(p);
-      } else if (error === 500) {
-        let p = document.createElement("p");
-        p.textContent = "Server Error";
-        document.getElementById("reviews").appendChild(p);
-      }
+    reviewData.forEach((element) => {
+        let li = document.createElement("li");
+        li.textContent = `${element.name}: ${element.body}`;
+        ul.appendChild(li);
+
+        
+        let br = document.createElement("br");
+        ul.appendChild(br);
     });
+    document.getElementById("reviews").appendChild(ul);
+})
+.catch(function(error) {
+    console.log(error);
+    if (error === 404) {
+        let li = document.createElement("p");
+        li.textContent = "Page Not Found";
+        document.getElementById("reviews").appendChild(li);
+    } else if (error === 500) {
+        let li = document.createElement("p");
+        li.textContent = "Server Error";
+        document.getElementById("reviews").appendChild(li);
+    }
+});
